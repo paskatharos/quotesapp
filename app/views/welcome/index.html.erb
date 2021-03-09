@@ -28,3 +28,6 @@
     dateButton.addEventListener("click", addDate);
 
 </script>
+
+<% quote = Quote.first %>
+<p>"<%= quote.content %>" -<%= quote.author_name %></p>
