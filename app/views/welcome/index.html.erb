@@ -1,2 +1,30 @@
 <h1>Sup World!</h1>
-<div id="sup_world"></div>
+
+<button id="clickMe">click me</button>
+<ol id="greetingList">
+</ol>
+
+<button id="dateButton">find today's Birthday date!</button>
+<p>Happy Birthday! Today is <span id="dateFill"></span></p>
+<script type="text/javascript">
+    const clickMeButton = document.getElementById("clickMe");
+    const greetingList = document.getElementById("greetingList");
+
+    addToGreetingList = function(event) {
+        newItem = document.createElement("li");
+        newItem.innerHTML = "Buenos Dias! Bien Salud.";
+        greetingList.appendChild(newItem);
+    }
+
+    clickMeButton.addEventListener("click", addToGreetingList);
+
+    const dateButton = document.getElementById("dateButton");
+    const dateFill = document.getElementById("dateFill");
+
+    addDate = function(event){
+        dateFill.innerHTML = Date();
+    }
+
+    dateButton.addEventListener("click", addDate);
+
+</script>
