@@ -13,3 +13,10 @@
  *= require_tree .
  *= require_self
  */
+h1 {color: green}
+#sup_world {
+    background-image: url(image-path('sup_world'));
+    width: 255px;
+    height: 150px;
+    border: 1px solid black;
+}
